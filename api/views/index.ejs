@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luambacul.ro</title>
+    <title>Luambacul.ro - Pregătire Bacalaureat Matematică</title>
+    <meta name="description" content="Luambacul.ro oferă resurse și cursuri pentru pregătirea examenului de bacalaureat la matematică. Descoperiți materiale și suport pentru succesul la examen.">
+    <meta name="keywords" content="bacalaureat, matematică, pregătire bac, cursuri bacalaureat, resurse educaționale">
+    <meta name="author" content="Luambacul.ro">
     <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -14,97 +17,145 @@
         body {
             height: 100%;
             margin: 0;
-            display: flex;
-            background-color: white;
-            color: black;
-            flex-direction: column;
         }
 
-        .content {
-            flex: 1;
-            overflow-y: auto;
+        .footer .contact-info {
+            margin-top: 1rem;
         }
 
-        footer {
-            padding: 1rem;
-            text-align: center;
-            bottom: 0;
-            left: 0;
+        .image-block img {
             width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            height: auto;
+        }
+
+        .image-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .image-block img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-link {
+            color: #fff !important;
         }
     </style>
 </head>
 
 <body>
-
-    <!-- Banner Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Bine ați venit la Luambacul.ro</h1>
-            <p class="lead">Cursuri pentru pregătirea examenului de bacalaureat</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Luambacul.ro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="container-fluid p-0">
+            <img src="/assets/banner.png" alt="Banner" class="banner">
         </div>
     </header>
 
-    <!-- PDF Book Preview Section -->
-    <section id="book-preview" class="text-center my-5">
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="mb-4">Cartea Cursului</h2>
-            <a href="/pdfs/cartea_mea.pdf" target="_blank">
-                <img src="/images/book-cover.png" alt="Cartea Cursului" class="img-fluid rounded shadow-sm mb-3"
-                    style="width: 200px;">
-            </a>
-            <p>Faceți clic pe imagine pentru a previzualiza PDF-ul.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1">
+                    <img src="assets/image2.png" class="img-fluid rounded shadow" alt="Resurse Educative">
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h2 class="text-primary mb-4">De ce să ne alegi?</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Accesibilitate globală - cursuri disponibile din orice colț al lumii.</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Flexibilitate - programează sesiuni în funcție de nevoile tale.</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Diversitate de platforme - alege din Zoom, Google Meet, Skype.</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Suport continuu - acces la discuții și asistență în afara orelor de curs.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Experiență personalizată - sesiuni adaptate pentru nevoile și obiectivele tale.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="text-center my-5">
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="mb-4">Contactați-ne</h2>
-            <p class="lead">Pentru orice întrebări, vă rugăm să ne contactați la:</p>
-            <ul class="list-unstyled">
-                <li>Email: <a href="mailto:contact@luambacul.ro" class="btn btn-link">contact@luambacul.ro</a></li>
-                <li>Telefon: <a href="tel:+40712345678" class="btn btn-link">+40 712 345 678</a></li>
-            </ul>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-primary mb-4">Cursuri Online</h2>
+                    <p class="lead mb-4">
+                        Indiferent de unde te afli, putem comunica eficient la distanță. Ne întâlnim online fie în sesiuni <b>private</b>, fie în <b>grup</b>.
+                    </p>
+                    <p class="text-muted">
+                        Folosim platformele:
+                        <span class="font-weight-bold">
+                            <a href="https://zoom.us" class="text-info" target="_blank">Zoom</a>, 
+                            <a href="https://meet.google.com" class="text-info" target="_blank">Google Meet</a>, 
+                            <a href="https://www.skype.com" class="text-info" target="_blank">Skype</a>
+                        </span> pentru cursuri.
+                    </p>
+                    <p class="text-muted">
+                        Pentru discuții în afara orelor, ne putem conecta prin
+                        <span class="font-weight-bold">
+                            <a href="https://www.whatsapp.com" class="text-info" target="_blank">Whatsapp</a> 
+                            sau 
+                            <a href="https://telegram.org" class="text-info" target="_blank">Telegram</a>.
+                        </span>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/image.jpg" class="img-fluid rounded shadow" alt="Resurse Educative">
+                </div>
+            </div>
         </div>
     </section>
-
-    <footer id="mainFooter">
-        <div class="container py-2 bg-light">
+    
+    <footer id="contact">
+        <div class="container py-4" style="text-align: center; max-width: 500px">
             <div class="row justify-content-center">
-                <div class="col-lg-2 col-4 mb-3">
-                    <a class="text-dark" href="https://web.whatsapp.com/send/?phone=%2B40734819818"
-                        style="cursor: pointer;">
+                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
+                    <a href="https://web.whatsapp.com/send/?phone=%2B40734819818" style="max-width: 50px;">
                         <i class="fab fa-2x fa-whatsapp text-success"></i>
-                        <p>WhatsApp</p>
                     </a>
                 </div>
-                <div class="col-lg-2 col-4 mb-3">
-                    <!-- Colorful email icon -->
-                    <a class="text-dark" href="mailto:contact@luambacul.ro" style="cursor: pointer;">
-                        <i class="fas fa-2x fa-envelope" style="color: #FF4500;"></i>
-                        <p>Email</p>
+                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/luambacul" style="max-width: 50px;">
+                        <i class="fab fa-2x fa-facebook" style="color: #3b5998;"></i>
+                    </a>
+                </div>
+                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
+                    <a href="https://t.me/luambacul" style="max-width: 50px;">
+                        <i class="fab fa-2x fa-telegram" style="color: #0088cc;"></i>
                     </a>
                 </div>
             </div>
-            <p class="copyright py-3 text-center">
-                &copy; 2024 Luambacul. Toate drepturile rezervate.
+        </div>
+        <div class="container" style="text-align: center;">
+            <p class="py-3">
+                &copy; 2024 Luambacul.ro. Toate drepturile rezervate. Contact: <a href="mailto:contact@luambacul.ro">contact@luambacul.ro</a>
             </p>
         </div>
     </footer>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        .btn-link {
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .btn-link:hover {
-            color: #0056b3;
-            transform: scale(1.1);
-        }
-    </style>
-
 </body>
 
 </html>
