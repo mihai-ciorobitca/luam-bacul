@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
-const sitemap = require('sitemap');
-const fs = require('fs');
+const { SitemapStream, streamToPromise } = require('sitemap');
 
 const app = express();
 
@@ -16,24 +15,24 @@ app.get('/', (req, res) => {
 });
 
 app.get('/sitemap.xml', (req, res) => {
-  const sitemapContent = sitemap.createSitemap({
-    hostname: 'https://www.luambacul.ro',
-    cacheTime: 600000,
-    urls: [
-      { url: '/', changefreq: 'daily', priority: 1.0 },
-    ]
-  });
-
-  res.header('Content-Type', 'application/xml');
-  res.send(sitemapContent.toString());
+  const stream = new SitemapStream({ hostname: 'https://luambacul.ro' });
+  stream.write({ url: '/', changefreq: 'daily', priority: 1.0 });
+  stream.end();
+  streamToPromise(stream)
+    .then(sitemap => {
+      res.header('Content-Type', 'application/xml');
+      res.send(sitemap.toString());
+    })
+    .catch(err => {
+      console.error('Error generating sitemap:', err);
+      res.status(500).send('Error generating sitemap');
+    });
 });
 
-// Handle 404 errors
 app.use((req, res, next) => {
   res.status(404).render('page_404');
 });
 
-// Handle 500 errors
 app.use((req, res, next) => {
   res.status(500).render('page_500');
 });
