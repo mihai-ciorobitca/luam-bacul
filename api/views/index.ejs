@@ -1,25 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Luambacul.ro</title>
+    <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <meta name="keywords" content="Network, Learning, Free, Python, Programming, Studio">
-    <meta name="author" content="Network Studio">
-    <meta name="description" content="Network community for free programming learning ">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            background-color: white;
+            color: black;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        footer {
+            padding: 1rem;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Welcome to Meditatii Gratuite</p>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Banner Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bine ați venit la Luambacul.ro</h1>
+            <p class="lead">Cursuri pentru pregătirea examenului de bacalaureat</p>
+        </div>
+    </header>
+
+    <!-- PDF Book Preview Section -->
+    <section id="book-preview" class="text-center my-5">
+        <div class="container">
+            <h2 class="mb-4">Cartea Cursului</h2>
+            <a href="/pdfs/cartea_mea.pdf" target="_blank">
+                <img src="/images/book-cover.png" alt="Cartea Cursului" class="img-fluid rounded shadow-sm mb-3"
+                    style="width: 200px;">
+            </a>
+            <p>Faceți clic pe imagine pentru a previzualiza PDF-ul.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="text-center my-5">
+        <div class="container">
+            <h2 class="mb-4">Contactați-ne</h2>
+            <p class="lead">Pentru orice întrebări, vă rugăm să ne contactați la:</p>
+            <ul class="list-unstyled">
+                <li>Email: <a href="mailto:contact@luambacul.ro" class="btn btn-link">contact@luambacul.ro</a></li>
+                <li>Telefon: <a href="tel:+40712345678" class="btn btn-link">+40 712 345 678</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="mainFooter">
+        <div class="container py-2 bg-light">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-4 mb-3">
+                    <a class="text-dark" href="https://web.whatsapp.com/send/?phone=%2B40734819818"
+                        style="cursor: pointer;">
+                        <i class="fab fa-2x fa-whatsapp text-success"></i>
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-4 mb-3">
+                    <!-- Colorful email icon -->
+                    <a class="text-dark" href="mailto:contact@luambacul.ro" style="cursor: pointer;">
+                        <i class="fas fa-2x fa-envelope" style="color: #FF4500;"></i>
+                        <p>Email</p>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright py-3 text-center">
+                &copy; 2024 Luambacul. Toate drepturile rezervate.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .btn-link {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-link:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+
 </body>
 
 </html>
