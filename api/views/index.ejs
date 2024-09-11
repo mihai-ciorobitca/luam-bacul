@@ -17,22 +17,98 @@
         body {
             height: 100%;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
         }
 
-        .footer .contact-info {
-            margin-top: 1rem;
+        .navbar {
+            background-color: #007bff;
         }
 
-        .image-block img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-size: 1rem;
+        }
+
+        .nav-contact {
+            color: #fff !important;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .nav-link:hover,
+        .nav-contact:hover {
+            color: #ffc107 !important;
+            transition: color 0.3s ease;
         }
 
         .banner {
             width: 100%;
             max-height: 300px;
             height: auto;
+        }
+
+        .header-section {
+            padding: 50px 0;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .btn-custom {
+            background-color: #ffc107;
+            color: #333;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .feature-section {
+            padding: 50px 0;
+            background-color: #f7f9fa;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #ff6b6b;
+            transition: color 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            color: #007bff;
+        }
+
+        .call-section {
+            padding: 50px 0;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        .call-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer .contact-info {
+            margin-top: 1rem;
         }
 
         .image-block {
@@ -47,115 +123,132 @@
             height: auto;
         }
 
-        .nav-link {
-            color: #fff !important;
+        .testimonial-section {
+            padding: 50px 0;
+            background-color: #ffe8d6;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffc107;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Luambacul.ro</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Luambacul.ro</a>
+            </div>
         </nav>
         <div class="container-fluid p-0">
             <img src="/assets/banner.png" alt="Banner" class="banner">
         </div>
     </header>
 
-    <section class="py-5 bg-light">
+    <section class="header-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-1">
-                    <img src="assets/image2.png" class="img-fluid rounded shadow" alt="Resurse Educative">
+            <h1>Pregătește-te pentru Bacalaureat Gratuit și Eficient!</h1>
+            <p class="lead">Matematica nu mai reprezintă un obstacol. Contactează-ne pe <b>Telegram</b> sau <b>Whatsapp</b> pentru o pregătire personalizată!</p>
+            <a href="https://t.me/luambacul" class="btn btn-custom">Contactează-ne pe Telegram</a>
+        </div>
+    </section>
+
+    <section class="feature-section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-4"><i class="feature-icon fas fa-book-open"></i></div>
+                    <h3>Lecții Interactive</h3>
+                    <p>Lecții și materiale de studiu gratuite, prezentate într-un mod accesibil, astfel încât să poți învăța în ritmul tău.</p>
                 </div>
-                <div class="col-md-6 order-md-2">
-                    <h2 class="text-primary mb-4">De ce să ne alegi?</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Accesibilitate globală - cursuri disponibile din orice colț al lumii.</span>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Flexibilitate - programează sesiuni în funcție de nevoile tale.</span>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Diversitate de platforme - alege din Zoom, Google Meet, Skype.</span>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Suport continuu - acces la discuții și asistență în afara orelor de curs.</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-check-circle text-success"></i> <span class="ml-2">Experiență personalizată - sesiuni adaptate pentru nevoile și obiectivele tale.</span>
-                        </li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="mb-4"><i class="feature-icon fas fa-clipboard-list"></i></div>
+                    <h3>Teste și Simulări</h3>
+                    <p>Pregătește-te exact așa cum vei da examenul! Testele și simulările noastre te vor ajuta să-ți gestionezi timpul și emoțiile.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-4"><i class="feature-icon fas fa-video"></i></div>
+                    <h3>Soluții Video</h3>
+                    <p>Tutoriale video explicative, care te ghidează pas cu pas în rezolvarea problemelor de matematică.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-5 bg-light">
+    <section class="testimonial-section" id="testimonials">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="text-primary mb-4">Cursuri Online</h2>
-                    <p class="lead mb-4">
-                        Indiferent de unde te afli, putem comunica eficient la distanță. Ne întâlnim online fie în sesiuni <b>private</b>, fie în <b>grup</b>.
-                    </p>
-                    <p class="text-muted">
-                        Folosim platformele:
-                        <span class="font-weight-bold">
-                            <a href="https://zoom.us" class="text-info" target="_blank">Zoom</a>, 
-                            <a href="https://meet.google.com" class="text-info" target="_blank">Google Meet</a>, 
-                            <a href="https://www.skype.com" class="text-info" target="_blank">Skype</a>
-                        </span> pentru cursuri.
-                    </p>
-                    <p class="text-muted">
-                        Pentru discuții în afara orelor, ne putem conecta prin
-                        <span class="font-weight-bold">
-                            <a href="https://www.whatsapp.com" class="text-info" target="_blank">Whatsapp</a> 
-                            sau 
-                            <a href="https://telegram.org" class="text-info" target="_blank">Telegram</a>.
-                        </span>
-                    </p>
+            <h2 class="text-center mb-5">Ce spun elevii noștri</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial p-4 text-center">
+                        <img src="assets/student1.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
+                        <p>"Pregătirea la Luambacul.ro a fost esențială pentru succesul meu la bacalaureat. Recomand cu încredere!"</p>
+                        <p class="font-weight-bold">- Ana, elevă</p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/image.jpg" class="img-fluid rounded shadow" alt="Resurse Educative">
+                <div class="col-md-4">
+                    <div class="testimonial p-4 text-center">
+                        <img src="assets/student2.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
+                        <p>"Lecțiile online și resursele disponibile mi-au oferit tot suportul de care aveam nevoie pentru a trece cu brio examenul."</p>
+                        <p class="font-weight-bold">- Mihai, elev</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4 text-center">
+                        <img src="assets/student3.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
+                        <p>"Profesorii sunt dedicați și materialele sunt foarte utile. Am simțit progresul de la prima lecție!"</p>
+                        <p class="font-weight-bold">- Ioana, elevă</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer id="contact">
-        <div class="container py-4" style="text-align: center; max-width: 500px">
-            <div class="row justify-content-center">
-                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
-                    <a href="https://web.whatsapp.com/send/?phone=%2B40734819818" style="max-width: 50px;">
-                        <i class="fab fa-2x fa-whatsapp text-success"></i>
-                    </a>
-                </div>
-                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
-                    <a href="https://www.facebook.com/luambacul" style="max-width: 50px;">
-                        <i class="fab fa-2x fa-facebook" style="color: #3b5998;"></i>
-                    </a>
-                </div>
-                <div class="col-4 mb-3 d-flex align-items-center justify-content-center">
-                    <a href="https://t.me/luambacul" style="max-width: 50px;">
-                        <i class="fab fa-2x fa-telegram" style="color: #0088cc;"></i>
-                    </a>
-                </div>
-            </div>
+
+    <section class="call-section">
+        <div class="container">
+            <h2>Întrebări? Sună-ne acum!</h2>
+            <p class="lead">Discută direct cu profesorii noștri pentru a găsi cea mai bună metodă de pregătire pentru tine.</p>
+            <a href="tel:+40734819818" class="btn btn-custom">Sună acum: +40734819818</a>
         </div>
-        <div class="container" style="text-align: center;">
-            <p class="py-3">
-                &copy; 2024 Luambacul.ro. Toate drepturile rezervate. Contact: <a href="mailto:contact@luambacul.ro">contact@luambacul.ro</a>
-            </p>
+    </section>
+
+    <footer class="footer bg-dark text-white pt-4">
+        <div class="container text-center">
+            <h4>Urmărește-ne pe social media</h4>
+            <div class="social-icons">
+                <a href="https://wa.me/40734819818"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/luambacul"><i class="fab fa-facebook"></i></a>
+                <a href="https://t.me/luambacul"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="contact-info py-3">
+                <p>&copy; 2024 Luambacul.ro. Toate drepturile rezervate. Contact: <a href="mailto:contact@luambacul.ro" class="text-white">contact@luambacul.ro</a></p>
+            </div>
         </div>
     </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
