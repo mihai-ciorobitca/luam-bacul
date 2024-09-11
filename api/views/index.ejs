@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luambacul.ro - Pregătire Bacalaureat Matematică</title>
-    <meta name="description" content="Luambacul.ro oferă resurse și cursuri pentru pregătirea examenului de bacalaureat la matematică. Descoperiți materiale și suport pentru succesul la examen.">
+    <meta name="description"
+        content="Luambacul.ro oferă resurse și cursuri pentru pregătirea examenului de bacalaureat la matematică. Descoperiți materiale și suport pentru succesul la examen.">
     <meta name="keywords" content="bacalaureat, matematică, pregătire bac, cursuri bacalaureat, resurse educaționale">
     <meta name="author" content="Luambacul.ro">
     <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         html,
@@ -20,6 +20,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
             color: #333;
+            scroll-behavior: smooth;
         }
 
         .navbar {
@@ -30,27 +31,20 @@
             font-weight: bold;
         }
 
-        .nav-link {
-            color: #fff !important;
-            font-size: 1rem;
-        }
-
+        .nav-link,
         .nav-contact {
             color: #fff !important;
-            font-size: 1rem;
-            font-weight: bold;
         }
 
         .nav-link:hover,
         .nav-contact:hover {
             color: #ffc107 !important;
-            transition: color 0.3s ease;
         }
 
         .banner {
             width: 100%;
-            max-height: 300px;
             height: auto;
+            object-fit: cover;
         }
 
         .header-section {
@@ -60,17 +54,12 @@
             text-align: center;
         }
 
-        .header-section h1 {
-            font-size: 2.5rem;
-        }
-
         .btn-custom {
             background-color: #ffc107;
             color: #333;
             border-radius: 50px;
             padding: 10px 20px;
             font-size: 1.2rem;
-            transition: all 0.3s ease;
         }
 
         .btn-custom:hover {
@@ -79,77 +68,34 @@
             transform: translateY(-3px);
         }
 
-        .feature-section {
-            padding: 50px 0;
-            background-color: #f7f9fa;
-            text-align: center;
+        .content-section img {
+            max-width: 100%;
+            height: auto;
         }
 
         .feature-icon {
             font-size: 3rem;
             color: #ff6b6b;
-            transition: color 0.3s ease;
         }
 
         .feature-icon:hover {
             color: #007bff;
         }
 
-        .call-section {
-            padding: 50px 0;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-        }
-
-        .call-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .footer .contact-info {
-            margin-top: 1rem;
-        }
-
-        .image-block {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .image-block img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .testimonial-section {
-            padding: 50px 0;
-            background-color: #ffe8d6;
-        }
-
-        .testimonial {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .testimonial:hover {
-            transform: scale(1.05);
-        }
-
         .social-icons a {
             color: white;
             font-size: 2rem;
             margin: 0 10px;
-            transition: color 0.3s ease;
         }
 
         .social-icons a:hover {
             color: #ffc107;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
@@ -168,82 +114,142 @@
 
     <section class="header-section">
         <div class="container">
-            <h1>Pregătește-te pentru Bacalaureat Gratuit și Eficient!</h1>
-            <p class="lead">Matematica nu mai reprezintă un obstacol. Contactează-ne pe <b>Telegram</b> sau <b>Whatsapp</b> pentru o pregătire personalizată!</p>
-            <a href="https://t.me/luambacul" class="btn btn-custom">Contactează-ne pe Telegram</a>
-        </div>
-    </section>
-
-    <section class="feature-section" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="mb-4"><i class="feature-icon fas fa-book-open"></i></div>
-                    <h3>Lecții Interactive</h3>
-                    <p>Lecții și materiale de studiu gratuite, prezentate într-un mod accesibil, astfel încât să poți învăța în ritmul tău.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-4"><i class="feature-icon fas fa-clipboard-list"></i></div>
-                    <h3>Teste și Simulări</h3>
-                    <p>Pregătește-te exact așa cum vei da examenul! Testele și simulările noastre te vor ajuta să-ți gestionezi timpul și emoțiile.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="mb-4"><i class="feature-icon fas fa-video"></i></div>
-                    <h3>Soluții Video</h3>
-                    <p>Tutoriale video explicative, care te ghidează pas cu pas în rezolvarea problemelor de matematică.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonial-section" id="testimonials">
-        <div class="container">
-            <h2 class="text-center mb-5">Ce spun elevii noștri</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial p-4 text-center">
-                        <img src="assets/student1.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
-                        <p>"Pregătirea la Luambacul.ro a fost esențială pentru succesul meu la bacalaureat. Recomand cu încredere!"</p>
-                        <p class="font-weight-bold">- Ana, elevă</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial p-4 text-center">
-                        <img src="assets/student2.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
-                        <p>"Lecțiile online și resursele disponibile mi-au oferit tot suportul de care aveam nevoie pentru a trece cu brio examenul."</p>
-                        <p class="font-weight-bold">- Mihai, elev</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial p-4 text-center">
-                        <img src="assets/student3.jpg" alt="Student" class="img-fluid rounded-circle mb-3" style="width: 80px;">
-                        <p>"Profesorii sunt dedicați și materialele sunt foarte utile. Am simțit progresul de la prima lecție!"</p>
-                        <p class="font-weight-bold">- Ioana, elevă</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="call-section">
-        <div class="container">
-            <h2>Întrebări? Sună-ne acum!</h2>
-            <p class="lead">Discută direct cu profesorii noștri pentru a găsi cea mai bună metodă de pregătire pentru tine.</p>
+            <h1>Pregătește-te pentru Bacalaureat <br>Gratuit și Eficient!</h1>
+            <p class="lead">Matematica nu mai reprezintă un obstacol.<br> Ne găsești și pe <b>Telegram</b> sau
+                <b>Whatsapp</b> pentru o pregătire personalizată!</p>
             <a href="tel:+40734819818" class="btn btn-custom">Sună acum: +40734819818</a>
         </div>
     </section>
 
-    <footer class="footer bg-dark text-white pt-4">
+    <!-- Content Sections -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Învăță și Succesul vine! 🎓✨</h2>
+                <p>Te pregătești pentru Bacalaureat și simți că matematica îți pune piedici? <br><br>
+                    Noi suntem aici să te ajutăm să depășești aceste provocări! <br><br> Oferim resursele necesare
+                    pentru a învăța și a-ți consolida cunoștințele fără costuri. Pentru noi, succesul tău este o
+                    prioritate!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/math-simplified.jpg" alt="Matematica simplificată" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row align-items-center flex-md-row">
+            <div class="col-md-6">
+                <img src="assets/why-to-choose-us.jpg" alt="De ce să ne alegi" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">De ce să ne alegi ? 🤔🎯</h2>
+                <p>Înțelegem presiunea și stresul acestei perioade și suntem alături de tine pentru a te ajuta să obții
+                    cele mai bune rezultate, fără să plătești sume mari pe meditații. 
+                    <br><br> Educația este un drept, nu un lux! 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Matematica poate fi plăcută! 😄🔢</h2>
+                <p>Cu ajutorul lecțiilor noastre detaliate, ghiduri pas cu pas, teste de evaluare și video-uri
+                    explicative, înveți într-un mod ușor și eficient. 📝📹
+                    <br><br> Matematica devine un limbaj fascinant, un puzzle ce așteaptă să fie rezolvat! 
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/learning-fun.jpg" alt="Matematica distractivă" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="container my-5">
+        <h2 class="text-center mb-4">Ce oferim pentru succesul tău</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-book-open mb-3"></i>
+                <h4 class="mb-3">Cursuri Online</h4>
+                <p>Acces la lecții detaliate și bine structurate pentru a-ți clarifica toate conceptele.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-video mb-3"></i>
+                <h4 class="mb-3">Video-uri Explicative</h4>
+                <p>Vizualizează și învață prin video-uri care explică pas cu pas concepte cheie de matematică.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-tasks mb-3"></i>
+                <h4 class="mb-3">Teste și Evaluări</h4>
+                <p>Testează-ți cunoștințele cu teste interactive și primește feedback instant.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-lightbulb mb-3"></i>
+                <h4 class="mb-3">Ghiduri Practice</h4>
+                <p>Accesează ghiduri practice care îți oferă soluții și sfaturi pentru probleme dificile.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-comments mb-3"></i>
+                <h4 class="mb-3">Suport Comunitar</h4>
+                <p>Interacționează cu alți elevi și învață împreună pentru a obține rezultate mai bune.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="feature-icon fas fa-calendar-alt mb-3"></i>
+                <h4 class="mb-3">Planuri Personalizate</h4>
+                <p>Obține planuri de studiu adaptate nevoilor tale specifice pentru o pregătire optimă.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-5">Ce spun elevii noștri</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial p-4 text-center bg-white rounded shadow-sm">
+                    <img src="assets/student-female.png" alt="Student" class="img-fluid rounded-circle mb-3"
+                        style="width: 80px;">
+                    <p>"Pregătirea pe care am primit-o aici m-a ajutat sa iau 9 in bac, recomand si altora daca vor sa
+                        nu isi fac griji pentru examen!"</p>
+                    <p class="font-weight-bold">- Ana, elevă</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial p-4 text-center bg-white rounded shadow-sm">
+                    <img src="assets/student-male.png" alt="Student" class="img-fluid rounded-circle mb-3"
+                        style="width: 80px;">
+                    <p>"Am luat 9.70 in simulare si 10 la examen, m-a ajutat mult sa am lectiile mai structurate si pe
+                        cineva care sa ma indrume"</p>
+                    <p class="font-weight-bold">- Mihai, elev</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial p-4 text-center bg-white rounded shadow-sm">
+                    <img src="assets/student-female.png" alt="Student" class="img-fluid rounded-circle mb-3"
+                        style="width: 80px;">
+                    <p>"Nu imi dadeam nicio sansa la mate dar am reusit sa iau 8.90 cu excercitiul metodic oferit, chiar
+                        mi-au fost utile lectiile"</p>
+                    <p class="font-weight-bold">- Ioana, elevă</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container text-center">
-            <h4>Urmărește-ne pe social media</h4>
-            <div class="social-icons">
+            <h4 class="mb-4">Urmărește-ne pe social media</h4>
+            <div class="social-icons mb-3">
                 <a href="https://wa.me/40734819818"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/luambacul"><i class="fab fa-facebook"></i></a>
                 <a href="https://t.me/luambacul"><i class="fab fa-telegram"></i></a>
+                <a href="https://twitter.com/luambacul"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/luambacul"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="contact-info py-3">
-                <p>&copy; 2024 Luambacul.ro. Toate drepturile rezervate. Contact: <a href="mailto:contact@luambacul.ro" class="text-white">contact@luambacul.ro</a></p>
-            </div>
+            <p>&copy; 2024 Luambacul.ro. Toate drepturile rezervate. Contact: <a href="mailto:contact@luambacul.ro"
+                    class="text-white">contact@luambacul.ro</a><br><br>Realizat de <a href="https://networkstudio.store" class="text-white"><u>Network Studio</u></a></p>
         </div>
     </footer>
 
