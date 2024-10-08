@@ -10,6 +10,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/zohoverify', express.static(path.join(__dirname, 'zohoverify')));
 
+app.get("/*", (req, res) => {
+  res.render("404");
+}
+
 app.get('/', (req, res) => {
   res.render('index');
 });
