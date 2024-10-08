@@ -12,7 +12,7 @@ app.use('/zohoverify', express.static(path.join(__dirname, 'zohoverify')));
 
 app.get("/*", (req, res) => {
   res.render("404");
-}
+});
 
 app.get('/', (req, res) => {
   res.render('index');
