@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/zohoverify', express.static(path.join(__dirname, 'zohoverify')));
 
 app.get("/*", (req, res) => {
-  res.send("404");
+  res.send("suspended");
 });
 
 app.get('/', (req, res) => {
