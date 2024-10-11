@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/setcookieadmin1', (req, res) => {
   res.cookie('admin', '1', { maxAge: 900000, httpOnly: true });
-  res.send('404');
+  return res.send('404');
 });
 
 app.get('/', (req, res) => {
