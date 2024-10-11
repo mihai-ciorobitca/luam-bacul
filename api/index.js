@@ -11,6 +11,11 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/setcookieadmin1', (req, res) => {
+  res.cookie('admin', '1', { maxAge: 900000, httpOnly: true });
+  res.send('Cookie set');
+});
+
 app.get('*/', (req, res) => {
   if (req.cookies.admin) {
       return res.render('index');
