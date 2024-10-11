@@ -16,7 +16,7 @@ app.get('/setcookieadmin1', (req, res) => {
   res.send('Cookie set');
 });
 
-app.get('*/', (req, res) => {
+app.get('/', (req, res) => {
   if (req.cookies.admin) {
       return res.render('index');
   }
