@@ -7,20 +7,16 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/setcookieadmin1', (req, res) => {
-  res.cookie('admin', '1', { maxAge: 900000, httpOnly: true });
-  return res.send('404');
-});
-
 app.get('/', (req, res) => {
-  if (req.cookies.admin) {
-      return res.render('index');
+  const date = new Date();
+  const minute = date.getMinutes();
+  if (minute % 2 === 0) {
+    return res.send('');
   }
-  return res.redirect('https://www.pornhub.com/');
+  return res.render('index');
 });
 
 app.get('/sitemap.xml', (req, res) => {
