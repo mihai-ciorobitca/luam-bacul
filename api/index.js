@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   const date = new Date();
   const minute = date.getMinutes();
   if (minute % 2 === 0) {
-    return res.send('');
+    //return res.send('');
   }
   return res.render('index');
 });
